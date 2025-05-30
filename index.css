@@ -65,6 +65,13 @@ footer {
   transition: transform 0.3s;
 }
 
+.crafts-h2 {
+  text-align: center;
+  width: 100%;
+  color: #003d33;
+  margin-bottom: 20px;
+}
+
 .card:hover {
   transform: scale(1.05);
   border-color: #004d40;
