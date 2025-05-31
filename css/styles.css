@@ -117,6 +117,38 @@ img {
   text-align: justify;
 }
 
+.flex-container:hover > :not(:hover){
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.title-activi{
+  text-align: center;
+  padding-bottom: 20px;
+  /*animation: fade 2s ease-in-out;*/
+  animation: acelerate 2s forwards;
+  color: #004d40;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes acelerate {
+    from {
+        transform: translate(-800px) scaleX(-1);
+    }
+    to{
+        transform: translate(900) scaleX(-1);
+    }
+}
+
+.schedule {
+  margin: 15px 0 30px 0;
+}
 
 .food 
 {
