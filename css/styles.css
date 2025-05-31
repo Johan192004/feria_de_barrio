@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fefefe;
+  color: #333;
+}
+
+header, footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+footer {
+  position:relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Flexbox para secciones de contenido */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1em;
+  width: 250px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: transform 0.3s;
+}
+
+.crafts-h2 {
+  text-align: center;
+  width: 100%;
+  color: #003d33;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #004d40;
+}
+
+/* Pseudo-clases */
+.card:nth-child(even) {
+  background-color: #f1f8e9;
+}
+
+.card:not(:hover) {
+  opacity: 0.95;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.crafts {
+  margin: 20px 0 40px 0;
+}
+
+.bienvenida {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-left: 6px solid #004d40;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.bienvenida h2 {
+  color: #004d40;
+  margin-bottom: 16px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.bienvenida p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+
+.food 
+{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("imgs/F3.jpg"); /* Cambia por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.card-food {
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-food:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.card-food img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.card-food h3 {
+    margin: 10px 0 6px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-food p {
+    margin: 0;
+    text-align: center;
+    color: #555;
+    font-size: 1em;
+}
